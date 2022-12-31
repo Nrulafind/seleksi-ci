@@ -90,4 +90,34 @@ class Admin extends CI_Controller
 		$this->m_admin->insert_guru('guru', $data);
 		redirect('guru');
 	}
+	public function edit_guru($id)
+	{
+		if ($this->session->status != 'admin') {
+			redirect('');
+		}
+		$nama = $this->input->post('nama');
+		$mapel = $this->input->post('mapel');
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+		$where = array('id_guru' => $id);
+		$data = array(
+			'nama' => $nama,
+			'mapel' => $mapel,
+			'username' => $username,
+			'password' => $password
+		);
+		$this->m_admin->update_guru($where, 'guru', $data);
+		redirect('guru');
+	}
+	public function hapus_guru($id)
+	{
+		if ($this->session->status != 'admin') {
+			redirect('');
+		}
+		$where = array('id_guru' => $id);
+		$this->m_admin->update_guru($where, 'guru');
+		redirect('guru');
+	}
+
+	//mapel
 }
