@@ -120,4 +120,49 @@ class Admin extends CI_Controller
 	}
 
 	//mapel
+	public function mapel()
+	{
+		if ($this->session->status != 'admin') {
+			redirect('');
+		}
+		$data['title'] = 'Mata Pelajaran';
+
+		$data['mapel'] = $this->m_admin->list_mapel()->result();
+
+		$this->header($data);
+		$this->load->view('mapel');
+		$this->load->view('template/footer');
+	}
+	public function tambah_mapel()
+	{
+		if ($this->session->status != 'admin') {
+			redirect('');
+		}
+		$mapel = $this->input->post('mapel');
+		$data = array('mapel' => $mapel);
+		$this->m_admin->insert_mapel('mapel', $data);
+		redirect('mapel');
+	}
+	public function edit_mapel($id)
+	{
+		if ($this->session->status != 'admin') {
+			redirect('');
+		}
+		$mapel = $this->input->post('mapel');
+		$where = array('id_mapel' => $id);
+		$data = array('mapel' => $mapel);
+		$this->m_admin->update_mapel($where, 'mapel', $data);
+		redirect('mapel');
+	}
+	public function hapus_mapel($id)
+	{
+		if ($this->session->status != 'admin') {
+			redirect('');
+		}
+		$where = array('id_mapel' => $id);
+		$this->m_admin->delete_mapel($where, 'mapel');
+		redirect('mapel');
+	}
+
+	//Siswa
 }
