@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 |--------------------------------------------------------------------------
@@ -23,8 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
-
+$config['base_url'] = 'http://' . $_SERVER['HTTP_HOST'];
+$config['base_url'] = preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])) . '/';
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -35,7 +35,7 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -326,7 +326,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/userguide3/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'qawsedrf';
 
 /*
 |--------------------------------------------------------------------------
@@ -384,8 +384,7 @@ $config['encryption_key'] = '';
 |
 */
 $config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'ci_session';
-$config['sess_samesite'] = 'Lax';
+$config['sess_cookie_name'] = 'seleksi_ci';
 $config['sess_expiration'] = 7200;
 $config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;
@@ -413,7 +412,6 @@ $config['cookie_domain']	= '';
 $config['cookie_path']		= '/';
 $config['cookie_secure']	= FALSE;
 $config['cookie_httponly'] 	= FALSE;
-$config['cookie_samesite'] 	= 'Lax';
 
 /*
 |--------------------------------------------------------------------------
