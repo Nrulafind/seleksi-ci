@@ -14,7 +14,7 @@ class Admin extends CI_Controller
 		$this->load->model('M_Admin', 'm_admin');
 	}
 
-	//header code for admin
+	//header code 
 	private function header($data)
 	{
 		//admin
@@ -26,6 +26,11 @@ class Admin extends CI_Controller
 			$guru = $this->session->id;
 			$data['perkelas'] = $this->m_admin->perkelas_g($guru)->result();
 		}
+		//open when trying
+		// if ($this->session->status == 'panitia_ppdb') {
+		// 	$panitia_ppdb = $this->session->id;
+		// 	$data['pendaftar'] = $this->m_admin->pendaftar($panitia_ppdb)->result();
+		// }
 		$this->load->view('template/header', $data);
 	}
 
@@ -46,6 +51,13 @@ class Admin extends CI_Controller
 			);
 			$data['passwdguru'] = $this->m_admin->cek_password_guru($where)->row_array();
 		}
+		//cek password panitia_ppdb
+		// if ($this->session->status == 'panitia_ppdb'){ {
+		// 	$where = array(
+		// 		'id_panitia_ppdb' => $this->session->id
+		// 	);
+		// 	$data['passwdpanitiappdb'] = $this->m_admin->cek_pass_panitia_ppdb($where)->row_array();
+		// }
 
 		$data['jmlmapel'] = $this->m_admin->list_mapel()->num_rows();
 		$data['jmlsiswa'] = $this->m_admin->list_siswa()->num_rows();
