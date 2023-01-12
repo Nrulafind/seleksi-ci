@@ -1,6 +1,5 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-
 class Login extends CI_Controller
 {
 	public function __construct()
@@ -18,7 +17,7 @@ class Login extends CI_Controller
 		$this->load->view('_template_login/login');
 	}
 
-	function actlogin()
+	function actregister()
 	{
 		$nis = $this->input->post('nis');
 		$nis = preg_replace("/[^0-9]/", "", $nis);

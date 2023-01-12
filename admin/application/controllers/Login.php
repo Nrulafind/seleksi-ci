@@ -26,21 +26,6 @@ class Login extends CI_Controller
 		$whereadmin = array('username' => $username);
 		if ($hak == 'admin') {
 			$cek = $this->m_admin->login_admin($whereadmin);
-			// if($cek->num_rows() > 0){
-			// 	$d = $cek->row_array();
-			// 	$data = array(
-			// 		'id' => $d['id_admin'],
-			// 		'nama' => $d['nama'],
-			// 		'username' => $d['username'],
-			// 		'status' => 'admin'
-			// 	);
-			// 	$this->session->set_userdata($data);
-			// 	redirect('');
-			// }
-			// else{
-			// 	$this->session->set_flashdata('gagal', 'Username / Password salah');
-			// 	redirect('login');
-			// }
 			if ($cek->num_rows() > 0) {
 				$d = $cek->row_array();
 				if (password_verify($password, $d['password'])) {
@@ -63,10 +48,8 @@ class Login extends CI_Controller
 			}
 		}
 		if ($hak == 'guru') {
-			# code...
 			$cek = $this->m_admin->login_guru($whereguru);
 			if ($cek->num_rows() > 0) {
-				# code...
 				$d = $cek->row_array();
 				$data = array(
 					'id' => $d['id_guru'],
@@ -82,5 +65,23 @@ class Login extends CI_Controller
 				redirect('login');
 			}
 		}
+		// if ($hak == 'panitia_ppdb') {
+		// 	$cek = $this->m_admin->login_panitia_ppdb($whereguru);
+		// 	if ($cek->num_rows() > 0) {
+		// 		$d = $cek->row_array();
+		// 		$data = array(
+		// 			'id' => $d['id_panitia_ppdb'],
+		// 			'nama' => $d['nama'],
+		// 			'username' => $d['username'],
+		// 			'seleksi' => $d['seleksi'],
+		// 			'status' => 'panitia_ppdb'
+		// 		);
+		// 		$this->session->set_userdata($data);
+		// 		redirect('');
+		// 	} else {
+		// 		$this->session->set_flashdata('gagal', 'Username / Password salah');
+		// 		redirect('login');
+		// 	}
+		// }
 	}
 }

@@ -49,7 +49,7 @@ class Admin extends CI_Controller
 			$where = array(
 				'id_guru' => $this->session->id
 			);
-			$data['passwdguru'] = $this->m_admin->cek_password_guru($where)->row_array();
+			$data['passwdguru'] = $this->m_admin->cek_passwd_guru($where)->row_array();
 		}
 		//cek password panitia_ppdb
 		// if ($this->session->status == 'panitia_ppdb'){ {
@@ -130,6 +130,8 @@ class Admin extends CI_Controller
 		$this->m_admin->update_guru($where, 'guru');
 		redirect('guru');
 	}
+	//panitia PPDB
+	//the code
 
 	//mapel
 	public function mapel()
