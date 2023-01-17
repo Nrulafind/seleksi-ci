@@ -131,7 +131,65 @@ class Admin extends CI_Controller
 		redirect('guru');
 	}
 	//panitia PPDB
-	//the code
+	// public function panitia_ppdb()
+	// {
+	// 	if ($this->session->status != 'panitia_ppdb') {
+	// 		redirect('');
+	// 	}
+	// 	$data['title'] = 'panitia_ppdb';
+	// 	$data['panitia_ppdb'] = $this->m_admin->list_panita_ppdb()->result();
+	// 	$data['pendaftar'] = $this->m_admin->list_mapel()->result();
+
+	// 	$this->header($data);
+	// 	$this->load->view('guru');
+	// 	$this->load->view('template/footer');
+	// }
+	// public function tambah_guru()
+	// {
+	// 	if ($this->session->status != 'admin') {
+	// 		redirect('');
+	// 	}
+	// 	$nama = $this->input->post('nama');
+	// 	$mapel = $this->input->post('mapel');
+	// 	$username = $this->input->post('username');
+	// 	$password = $this->input->post('password');
+	// 	$data = array(
+	// 		'nama' => $nama,
+	// 		'mapel' => $mapel,
+	// 		'username' => $username,
+	// 		'password' => $password
+	// 	);
+	// 	$this->m_admin->insert_guru('guru', $data);
+	// 	redirect('guru');
+	// }
+	// public function edit_guru($id)
+	// {
+	// 	if ($this->session->status != 'admin') {
+	// 		redirect('');
+	// 	}
+	// 	$nama = $this->input->post('nama');
+	// 	$mapel = $this->input->post('mapel');
+	// 	$username = $this->input->post('username');
+	// 	$password = $this->input->post('password');
+	// 	$where = array('id_guru' => $id);
+	// 	$data = array(
+	// 		'nama' => $nama,
+	// 		'mapel' => $mapel,
+	// 		'username' => $username,
+	// 		'password' => $password
+	// 	);
+	// 	$this->m_admin->update_guru($where, 'guru', $data);
+	// 	redirect('guru');
+	// }
+	// public function hapus_guru($id)
+	// {
+	// 	if ($this->session->status != 'admin') {
+	// 		redirect('');
+	// 	}
+	// 	$where = array('id_guru' => $id);
+	// 	$this->m_admin->update_guru($where, 'guru');
+	// 	redirect('guru');
+	// }
 
 	//mapel
 	public function mapel()

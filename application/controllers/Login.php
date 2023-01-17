@@ -108,9 +108,9 @@ class Login extends CI_Controller
 		if ($this->m_user->resetpasswd('siswa', $where, $data)) {
 			echo 1;
 		}
-		elseif () {
-			# code...
-		}
+		// elseif () {
+		// 	# code...
+		// }
 		$this->session->set_flashdata('flash', 'Password berhasil diubah, silahkan login !');
 		redirect('login');
 	}
