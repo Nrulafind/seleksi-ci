@@ -8,9 +8,9 @@
 	<!-- MyCSS -->
 	<link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
 	<!-- FontAwesome -->
-	<link rel="stylesheet" href="<?= base_url('assets/adminlte/bower_components/font-awesome/css/font-awesome.css'); ?>">
+	<link rel="stylesheet" href="<?= base_url('assets/adminsb2/vendor/fontawesome-free/css/font-awesome.css'); ?>">
 	<!-- Jquery -->
-	<script src="<?= base_url('assets/adminlte/bower_components/jquery/dist/jquery.min.js'); ?>"></script>
+	<script src="<?= base_url('assets/adminsb2/vendor/jquery/jquery.min.js'); ?>"></script>
 </head>
 
 <body>
