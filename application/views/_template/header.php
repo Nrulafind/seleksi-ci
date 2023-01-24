@@ -7,8 +7,6 @@
 	<title><?= $title; ?></title>
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<!-- Bootstrap 3.3.7 -->
-	<link rel="stylesheet" href="<?= base_url('assets/adminsb2/vendor/bootstrap/css/bootstrap.min.css'); ?>">
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="<?= base_url('assets/adminsb2/vendor/fontawesome-free/css/fontawesome.min.css'); ?>">
 	<!-- Theme style -->
@@ -16,10 +14,21 @@
 	<!-- Load Javascript -->
 	<script src="<?= base_url('assets/adminsb2/vendor/jquery/jquery.min.js'); ?>"></script>
 	<script src="<?= base_url('assets/js/sweetalert2.all.min.js'); ?>"></script>
+
+	<link rel="stylesheet" href="<?= base_url('assets/css/sweetalert2.min.css'); ?>">
+	<!-- CSS -->
+	<link rel="stylesheet" href="<?= base_url('assets/css/style-admin.css'); ?>">
+	<!-- Sweetalert -->
+	<script src="<?= base_url('assets/js/sweetalert2.all.min.js'); ?>"></script>
+	<!-- Custom fonts for this template-->
+	<link href="<?= base_url('assets/adminsb2/vendor/fontawesome-free/css/all.min.css'); ?>" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<!-- Custom styles for this template-->
+	<link href="<?= base_url('assets/adminsb2/css/sb-admin-2.min.css'); ?>" rel="stylesheet">
 </head>
 
-<body class="hold-transition skin-blue fixed sidebar-mini" oncontextmenu="return false;" style="-moz-user-select: none; cursor: default;">
-	<div class="wrapper">
+<body id="page-top" class="hold-transition skin-blue fixed sidebar-mini" oncontextmenu="return false;" style="-moz-user-select: none; cursor: default;">
+	<div id="wrapper">
 
 		<header class="main-header">
 			<?php require_once('topmenu.php'); ?>

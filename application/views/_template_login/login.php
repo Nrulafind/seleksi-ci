@@ -29,7 +29,6 @@
 						<img src="<?= base_url('assets/img/lsmk.jpg'); ?>" style="width: 75px; margin-right: 20px;">
 						<h1>SMK Ma'Arif 1 Piyungan</h1>
 					</div>
-					<!-- <h2 class="user_unregistered-title">SMK N 1 Kedungwuni</h2> -->
 					<p class="user_unregistered-text">Gunakan NIS dan Passsword untuk masuk,</p>
 					<button class="user_unregistered-signup" id="lupa-button">LUPA PASSWORD</button>
 				</div>

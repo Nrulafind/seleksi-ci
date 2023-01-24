@@ -17,6 +17,13 @@
     <script src="<?= base_url('assets/adminsb2/vendor/bootstrap/js/bootstrap.min.js'); ?>"></script>
     <!-- Adminsb2 App -->
     <script src="<?= base_url('assets/adminsb2/js/sb-admin-2.min.js'); ?>"></script>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="<?= base_url('assets/adminsb2/vendor/jquery/jquery.min.js') ?>"></script>
+    <script src="<?= base_url('assets/adminsb2/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="<?= base_url('assets/adminsb2/vendor/jquery-easing/jquery.easing.min.js') ?>"></script>
     <script>
     	$(document).ready(function() {
     		setInterval(function() {

@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="container-fluid">
 	<section class="content-header">
 		<h1 class="text-center">Tambah Soal</h1>
 	</section>
@@ -84,6 +84,8 @@
 			</div>
 		</div>
 	</section>
+</div>
+</body>
 </div>
 
 <script async="defer">

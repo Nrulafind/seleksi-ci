@@ -67,12 +67,6 @@
 										<button type="submit" class="btn btn-info btn-block btn-flat"><i class="fa fa-sign-in"></i> Login</button>
 									</form>
 									<hr>
-									<div class="text-center">
-										<a class="small" href="#">Forgot Password?</a>
-									</div>
-									<div class="text-center">
-										<a class="small" href="#">Create an Account!</a>
-									</div>
 								</div>
 							</div>
 						</div>

@@ -28,61 +28,61 @@
   		<div class="row">
   			<div class="col-lg-3 col-xs-6">
   				<!-- small box -->
-  				<div class="small-box bg-aqua">
-  					<div class="inner">
+  				<div class="card shadow mb-4 small-box bg-aqua">
+  					<div class="card-header py-3 inner">
   						<h3><?= $jmlmapel; ?></h3>
 
-  						<p>Mata Pelajaran</p>
+  						<p class="m-0 font-weight-bold text-primary">Mata Pelajaran</p>
   					</div>
-  					<div class="icon">
+  					<div class="card-body icon">
   						<i class="fa fa-file-text"></i>
+  						<a href="<?= base_url('mapel'); ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
   					</div>
-  					<a href="<?= base_url('mapel'); ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
   				</div>
   			</div>
   			<!-- ./col -->
   			<div class="col-lg-3 col-xs-6">
   				<!-- small box -->
-  				<div class="small-box bg-green">
-  					<div class="inner">
+  				<div class="card shadow mb-4 small-box bg-green">
+  					<div class="card-header py-3 inner">
   						<h3><?= $jmljurusan; ?></h3>
 
-  						<p>Jurusan</p>
+  						<p class="m-0 font-weight-bold text-primary">Jurusan</p>
   					</div>
-  					<div class="icon">
+  					<div class="card-body icon">
   						<i class="fa fa-th-large"></i>
+  						<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
   					</div>
-  					<a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
   				</div>
   			</div>
   			<!-- ./col -->
   			<div class="col-lg-3 col-xs-6">
   				<!-- small box -->
-  				<div class="small-box bg-yellow">
-  					<div class="inner">
+  				<div class="card shadow mb-4 small-box bg-yellow">
+  					<div class="card-header py-3 inner">
   						<h3><?= $jmlsiswa; ?></h3>
 
-  						<p>Siswa</p>
+  						<p class="m-0 font-weight-bold text-primary">Siswa</p>
   					</div>
-  					<div class="icon">
+  					<div class="card-body icon">
   						<i class="fa fa-user"></i>
+  						<a href="<?= base_url('siswa'); ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
   					</div>
-  					<a href="<?= base_url('siswa'); ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
   				</div>
   			</div>
   			<!-- ./col -->
   			<div class="col-lg-3 col-xs-6">
   				<!-- small box -->
-  				<div class="small-box bg-red">
-  					<div class="inner">
+  				<div class="card shadow mb-4 small-box bg-red">
+  					<div class="card-header py-3 inner">
   						<h3><?= $jmlkelas; ?></h3>
 
-  						<p>Kelas</p>
+  						<p class="m-0 font-weight-bold text-primary">Kelas</p>
   					</div>
-  					<div class="icon">
+  					<div class="card-body icon">
   						<i class="fa fa-th"></i>
+  						<a href="<?= base_url('kelas'); ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
   					</div>
-  					<a href="<?= base_url('kelas'); ?>" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
   				</div>
   			</div>
   			<!-- ./col -->
@@ -90,16 +90,8 @@
   		<!-- /.row -->
 
   	</section>
-  	<!-- /.Left col -->
-  	<!-- right col (We are only adding the ID to make the widgets sortable)-->
-  	<section class="col-lg-5 connectedSortable">
 
-  	</section>
-  	<!-- right col -->
+  	<!-- /.content-wrapper -->
   </div>
-  <!-- /.row (main row) -->
-
-  </section>
-  <!-- /.content -->
+  </body>
   </div>
-  <!-- /.content-wrapper -->
