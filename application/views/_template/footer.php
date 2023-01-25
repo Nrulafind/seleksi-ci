@@ -1,45 +1,39 @@
-    </section>
-    <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
+<!-- Footer -->
+<footer class="sticky-footer bg-white">
+	<div class="container my-auto">
+		<div class="copyright text-center my-auto">
+			<span>Copyright &copy; Nrulaci <?= date('Y'); ?> <a href="#">All rights
+					reserved.</span>
+		</div>
+	</div>
+</footer>
+</div>
+<!-- ./wrapper -->
+<!-- Adminsb2 App -->
+<script src="<?= base_url('assets/adminsb2/js/sb-admin-2.min.js'); ?>"></script>
 
-    <footer class="main-footer">
-    	<div class="pull-right hidden-xs">
-    		<b>Version</b> 1.0
-    	</div>
-    	<strong>Copyright &copy; <?= date('Y'); ?> <a href="<?= base_url(); ?>">Nrulaci</a>.</strong> All rights
-    	reserved.
-    </footer>
-    </div>
-    <!-- ./wrapper -->
+<!-- Bootstrap core JavaScript-->
+<script src="<?= base_url('assets/adminsb2/vendor/jquery/jquery.min.js') ?>"></script>
+<script src="<?= base_url('assets/adminsb2/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 
-    <!-- Bootstrap 3.3.7 -->
-    <script src="<?= base_url('assets/adminsb2/vendor/bootstrap/js/bootstrap.min.js'); ?>"></script>
-    <!-- Adminsb2 App -->
-    <script src="<?= base_url('assets/adminsb2/js/sb-admin-2.min.js'); ?>"></script>
+<!-- Core plugin JavaScript-->
+<script src="<?= base_url('assets/adminsb2/vendor/jquery-easing/jquery.easing.min.js') ?>"></script>
+<script>
+	$(document).ready(function() {
+		setInterval(function() {
+			var date = new Date();
+			var h = date.getHours(),
+				m = date.getMinutes(),
+				s = date.getSeconds();
+			h = ("0" + h).slice(-2);
+			m = ("0" + m).slice(-2);
+			s = ("0" + s).slice(-2);
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="<?= base_url('assets/adminsb2/vendor/jquery/jquery.min.js') ?>"></script>
-    <script src="<?= base_url('assets/adminsb2/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+			var time = h + ":" + m + ":" + s;
+			$('.live-clock').html(time);
+		}, 1000);
+	})
+</script>
+</body>
 
-    <!-- Core plugin JavaScript-->
-    <script src="<?= base_url('assets/adminsb2/vendor/jquery-easing/jquery.easing.min.js') ?>"></script>
-    <script>
-    	$(document).ready(function() {
-    		setInterval(function() {
-    			var date = new Date();
-    			var h = date.getHours(),
-    				m = date.getMinutes(),
-    				s = date.getSeconds();
-    			h = ("0" + h).slice(-2);
-    			m = ("0" + m).slice(-2);
-    			s = ("0" + s).slice(-2);
-
-    			var time = h + ":" + m + ":" + s;
-    			$('.live-clock').html(time);
-    		}, 1000);
-    	})
-    </script>
-    </body>
-
-    </html>
+</html>
