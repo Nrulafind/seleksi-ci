@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="<?= base_url('assets/adminsb2/vendor/fontawesome-free/css/font-awesome.css'); ?>">
+	<!-- CSS-->
+	<link href="<?= base_url('assets/adminsb2/css/sb-admin-2.min.css'); ?>" rel="stylesheet">
 	<!-- Jquery -->
 	<script src="<?= base_url('assets/adminsb2/vendor/jquery/jquery.min.js'); ?>"></script>
 </head>
@@ -53,6 +55,11 @@
 						<i class="fa fa-user"></i>
 						<input type="password" name="password" placeholder="Password" required="" />
 						<i class="fa fa-lock"></i>
+						<div class="form-group">
+							<div class="text-center">
+								<a class="small" href="register">Daftar Sekarang</a>
+							</div>
+						</div>
 						<button type="submit">
 							LOGIN
 						</button>
